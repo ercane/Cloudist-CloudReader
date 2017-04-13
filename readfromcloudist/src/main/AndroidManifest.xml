@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="mree.cloud.music.player.app">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Ozel">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="847d1e4036f88d4bfe55dd41f749961dd47aa802"/>
+
+        <!-- RECEIVER -->
+        <receiver android:name=".receivers.NotificationReceiver">
+            <intent-filter>
+                <action android:name="action_next"/>
+                <action android:name="action_pause"/>
+                <action android:name="action_play"/>
+                <action android:name="action_prev"/>
+                <action android:name="action_activity"/>
+                <action android:name="action_close"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.HeadsetPlugReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.HEADSET_PLUG"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>.
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.HardButtonReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receivers.WidgetProviderReceiver"
+            android:icon="@drawable/default_cover"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info"/>
+        </receiver>
+        <!-- SERVICE -->
+        <service
+            android:name=".services.MusicService"
+            android:stopWithTask="true"/>
+        <service android:name=".services.CmpDeviceService"/>
+
+        <!-- ACTIVITY -->
+        <activity
+            android:name=".act.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTop"
+            android:theme="@style/Ozel.NoActionBar">
+        </activity>
+        <activity
+            android:name=".act.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/Ozel">
+        </activity>
+        <activity android:name=".act.AuthActivity">
+        </activity>
+        <activity android:name=".act.AccountSetActivity">
+        </activity>
+        <activity
+            android:name=".act.PlaybackActivity"
+            android:configChanges="screenSize"
+            android:theme="@style/Ozel.NoActionBar">
+        </activity>
+        <activity
+            android:name=".act.NavigationActivity"
+            android:theme="@style/Ozel.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".act.LoginActivity"
+            android:label="@string/title_activity_login">
+        </activity>
+        <activity android:name=".act.PlayerSettingActivity">
+        </activity>
+        <activity android:name=".act.DataSettingActivity">
+        </activity>
+        <activity android:name=".act.HelpActivity">
+        </activity>
+        <activity android:name=".act.DisplaySetActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,100 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "mree.play.from.cloudist.app"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 44
+        versionName '4.1.4'
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    android {
+        packagingOptions {
+            exclude 'META-INF/DEPENDENCIES.txt'
+            exclude 'META-INF/LICENSE.txt'
+            exclude 'META-INF/NOTICE.txt'
+            exclude 'META-INF/NOTICE'
+            exclude 'META-INF/LICENSE'
+            exclude 'META-INF/DEPENDENCIES'
+            exclude 'META-INF/notice.txt'
+            exclude 'META-INF/license.txt'
+            exclude 'META-INF/dependencies.txt'
+            exclude 'META-INF/LGPL2.1'
+        }
+        useLibrary 'org.apache.http.legacy'
+    }
+    productFlavors {
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+apply plugin: 'checkstyle'
+
+check.dependsOn 'checkstyle'
+
+task checkstyle(type: Checkstyle) {
+    configFile file("../checkstyle.xml")
+    source 'src'
+    include '**/*.java'
+    exclude '**/gen/**', '**/model/*.java'
+
+    classpath = files()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':common')
+    //compile project(':unity-ads')
+    compile project(':rest-client')
+    compile 'com.google.android.gms:play-services-ads:10.2.0'
+    compile 'com.google.firebase:firebase-core:10.2.0'
+    compile 'com.google.firebase:firebase-database:10.2.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.spotify.sdk:spotify-auth:beta23-noconnect-2.20b@aar'
+    compile 'com.spotify.sdk:spotify-player:beta23-noconnect-2.20b@aar'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.7@aar') {
+        transitive = true;
+    }
+    compile 'com.folioreader:folioreader:0.2.5'
+
+}
+
+repositories {
+    jcenter()
+    flatDir {
+        dirs 'libs'
+    }
+
+}
+tasks.withType(JavaCompile) {
+    sourceCompatibility = "1.7"
+    targetCompatibility = "1.7"
+}

@@ -1,0 +1,106 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+
+    <style name="Ozel" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+
+        <item name="android:titleTextStyle">@style/Ozel.ActionBar.TitleTextStyle</item>
+        <item name="actionBarTabTextStyle">@style/Ozel.ActionBar.TitleTextStyle</item>
+        <item name="colorPrimary">@color/ozelPrimary</item>
+        <item name="colorPrimaryDark">@color/ozelPrimaryDark</item>
+        <item name="colorAccent">@color/ozelAccent</item>
+        <item name="android:colorBackground">@color/background_material_light</item>
+    </style>
+
+    <style name="Ozel.ActionBar" parent="@android:style/TextAppearance">
+        <item name="android:background">@drawable/bckgrnd_actionbar</item>
+        <item name="background">@drawable/bckgrnd_actionbar</item>
+    </style>
+
+    <style name="Ozel.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/ozelText</item>
+        <item name="android:background">@drawable/bckgrnd_actionbar</item>
+        <item name="background">@drawable/bckgrnd_actionbar</item>
+    </style>
+
+    <style name="Ozel.Title" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/ozelTitle</item>
+        <item name="android:textSize">@dimen/ozelTitle</item>
+    </style>
+
+    <style name="Ozel.Album" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/ozelAlbum</item>
+        <item name="android:textSize">@dimen/ozelAlbum</item>
+        <item name="android:text">italic</item>
+    </style>
+
+    <style name="Ozel.Artist" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/ozelArtist</item>
+        <item name="android:textSize">@dimen/ozelArtist</item>
+        <item name="android:text">normal|italic</item>
+    </style>
+
+    <style name="Ozel.Title.White" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/ozelTitleWhite</item>
+        <item name="android:textSize">@dimen/ozelTitle</item>
+    </style>
+
+    <style name="Ozel.Album.White" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/ozelAlbumWhite</item>
+        <item name="android:textSize">@dimen/ozelAlbum</item>
+        <item name="android:text">italic</item>
+    </style>
+
+    <style name="Ozel.Artist.White" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/ozelArtistWhite</item>
+        <item name="android:textSize">@dimen/ozelArtist</item>
+        <item name="android:text">normal|italic</item>
+    </style>
+
+    <style name="Ozel.Status" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/ozelStatus</item>
+        <item name="android:textSize">@dimen/ozelStatus</item>
+        <item name="android:text">normal|italic</item>
+    </style>
+
+    <style name="Ozel.Error" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="android:textSize">@dimen/ozelError</item>
+        <item name="android:text">italic</item>
+    </style>
+
+
+    <style name="Ozel.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="Ozel.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:titleTextStyle">@style/Ozel.ActionBar.TitleTextStyle</item>
+        <item name="actionBarTabTextStyle">@style/Ozel.ActionBar.TitleTextStyle</item>
+        <item name="colorPrimary">@color/ozelPrimary</item>
+        <item name="colorPrimaryDark">@color/ozelPrimaryDark</item>
+        <item name="colorAccent">@color/ozelAccent</item>
+    </style>
+
+    <style name="Ozel.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:titleTextStyle">@style/Ozel.ActionBar.TitleTextStyle</item>
+        <item name="actionBarTabTextStyle">@style/Ozel.ActionBar.TitleTextStyle</item>
+        <item name="colorPrimary">@color/ozelPrimary</item>
+        <item name="colorPrimaryDark">@color/ozelPrimaryDark</item>
+        <item name="colorAccent">@color/ozelAccent</item>
+    </style>
+    <style name="Theme.Ozel.Light.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="Blue" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/holo_blue_bright</item>
+        <item name="colorPrimaryDark">@android:color/holo_blue_dark</item>
+        <item name="colorAccent">@android:color/holo_blue_light</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:colorForeground">@android:color/holo_blue_light</item>
+    </style>
+
+</resources>

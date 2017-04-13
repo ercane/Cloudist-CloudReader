@@ -1,0 +1,124 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:ads="http://schemas.android.com/apk/res-auto"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="mree.cloud.music.player.app.act.fragment.AlbumFragment">
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+         <EditText
+             android:id="@+id/filterView"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_alignTop="@+id/playlistList"
+             android:hint="@string/search_dot"
+             android:visibility="gone"/>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginBottom="5dp">
+
+             <ListView
+                 android:id="@+id/playlistList"
+                 android:layout_width="fill_parent"
+                 android:layout_height="match_parent"
+                 android:clickable="true"
+                 android:columnWidth="160dp"
+                 android:focusable="true"
+                 android:gravity="center"
+                 android:horizontalSpacing="10dp"
+                 android:numColumns="auto_fit"
+                 android:stretchMode="columnWidth"
+                 android:verticalSpacing="10dp"/>
+             <com.google.android.gms.ads.AdView
+                 android:id="@+id/adView"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignTop="@+id/fabAddPlaylist"
+                 android:layout_toStartOf="@+id/fabAddPlaylist"
+                 ads:adSize="BANNER" ads:adUnitId="@string/banner_ad_id">
+             </com.google.android.gms.ads.AdView>
+             <android.support.design.widget.FloatingActionButton
+                 android:id="@+id/fabAddPlaylist"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="@dimen/fab_margin"
+                 android:layout_marginRight="@dimen/fab_margin"
+                 android:src="@drawable/cloud_add"
+                 android:tint="#ffffff"
+                 app:backgroundTint="@color/ozelPrimary" android:layout_alignParentBottom="true"
+                 android:layout_alignParentEnd="true"/>
+
+         </RelativeLayout>
+     </LinearLayout>
+ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/filterView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@+id/playlistList"
+            android:hint="@string/search_dot"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <ListView
+                android:id="@+id/playlistList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:choiceMode="multipleChoice"
+                android:clickable="true"
+                android:columnWidth="160dp"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"/>
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabAddPlaylist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/playlistList"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:src="@drawable/ic_playlist_add"
+                android:tint="#ffffff" app:backgroundTint="@color/ozelPrimary"/>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toStartOf="@+id/fabAddPlaylist"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad_id">
+            </com.google.android.gms.ads.AdView>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

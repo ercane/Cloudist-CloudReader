@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_data_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mree.cloud.music.player.app.act.DataSettingActivity">
+
+    <LinearLayout
+        android:id="@+id/clearCacheLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/black_border"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear Cache"
+            android:textAlignment="center"
+            android:textAppearance="@style/Ozel.Title"
+            android:textSize="24sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mobileAllowedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/black_border"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/swMobileAllowed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/allow_mobile_data"
+            android:textAlignment="center"
+            android:textAppearance="@style/Ozel.Title"
+            android:textSize="24sp"/>
+    </LinearLayout>
+</LinearLayout>

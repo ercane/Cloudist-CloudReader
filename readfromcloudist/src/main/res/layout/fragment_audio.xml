@@ -1,0 +1,175 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:ads="http://schemas.android.com/apk/res-auto"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="mree.cloud.music.player.app.act.fragment.AudioFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/swOffline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="@string/offline_mode"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/filterView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@+id/audioList"
+            android:hint="@string/search_dot"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <ListView
+                android:id="@+id/audioList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:choiceMode="multipleChoice"
+                android:clickable="true"
+                android:columnWidth="160dp"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/firstLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/fabAddAcc"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/fabAddAcc"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Add first account\nStart enjoy!"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textColor="@color/common_google_signin_btn_text_light_default"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_first_down"/>
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabAddAcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/audioList"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:src="@drawable/cloud_add"
+                android:tint="#ffffff" app:backgroundTint="@color/ozelPrimary"/>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toStartOf="@+id/fabAddAcc"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad_id">
+            </com.google.android.gms.ads.AdView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!-- <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Filter..."
+             android:layout_alignParentTop="true"
+             android:layout_alignTop="@+id/audioList"
+             android:id="@+id/filterView"/>
+         <RelativeLayout
+             android:id="@+id/mainLayout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+             <LinearLayout
+                 android:id="@+id/firstLayout"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_above="@+id/fabAddAcc"
+                 android:layout_alignParentStart="true"
+                 android:layout_toLeftOf="@+id/fabAddAcc"
+                 android:gravity="right"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="5dp"
+                     android:text="Add first account\nStart enjoy!"
+                     android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                     android:textColor="@color/common_google_signin_btn_text_light_default"/>
+
+                 <ImageView
+                     android:layout_width="60dp"
+                     android:layout_height="60dp"
+                     android:src="@drawable/ic_first_down"/>
+             </LinearLayout>
+             <android.support.design.widget.FloatingActionButton
+                 android:id="@+id/fabAddAcc"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginLeft="@dimen/fab_margin"
+                 android:layout_marginRight="@dimen/fab_margin"
+                 android:src="@drawable/cloud_add"
+                 android:tint="#ffffff"
+                 app:backgroundTint="@color/ozelPrimary"/>
+
+             <com.google.android.gms.ads.AdView
+                 android:id="@+id/adView"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_toStartOf="@+id/fabAddAcc"
+                 ads:adSize="BANNER"
+                 ads:adUnitId="@string/banner_ad_other_unit_id">
+             </com.google.android.gms.ads.AdView>
+
+             <ListView
+                 android:id="@+id/audioList"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:layout_alignParentStart="true"
+                 android:layout_alignParentTop="true"/>
+         </RelativeLayout>
+     </LinearLayout>-->
+
+</FrameLayout>

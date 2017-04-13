@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Play From Cloudist</string>
+    <string name="title_activity_home">Cloud Music Player</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Cloud Music Player</string>
+    <string name="title_activity_one_drive_sign_in">OneDriveSignInActivity</string>
+
+
+    <string name="add_account_name_hint">Please enter account name...</string>
+    <string name="add_account_select_type_hint">Please select account type...</string>
+    <string name="add_account_name_error">Name must be filled!</string>
+    <string name="add_account_spinner_error">Type must be selected!</string>
+
+    <string name="add_playlist_name_hint">Please enter playlist name...</string>
+    <string name="add_playlist_name_error">Name must be filled!</string>
+    <string name="add_playlist_name_exist_error">There is already a playlist has same name</string>
+
+    <string name="prev">&#xea23;</string>
+    <string name="next">&#xea24;</string>
+    <string name="play">&#xea15;</string>
+    <string name="pause">&#xea1d;</string>
+    <string name="scan_started">Scan started. Please patient</string>
+    <string name="scan_button">SCAN</string>
+    <string name="auth_button">AUTH</string>
+    <string name="refresh_button">REFRESH</string>
+    <string name="description">Desc</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="add_to_playlist_create_msg">Add to new playlist ...</string>
+    <string name="add_to_playlist_added_msg">Song added to</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_name">Name</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_log_in_password">Password</string>
+    <string name="prompt_sign_up_password">Password (again)</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_warning">Already have account! Sign in...</string>
+    <string name="action_remember_pass_warming">Remember Password</string>
+    <string name="action_sign_up_warming">Sign Up</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="permission_rationale_">Permission</string>
+    <string name="title_sign_up">Sign Up</string>
+    <string name="title_sign_in">Sign In</string>
+    <string name="title_remember">Remember</string>
+    <string name="passwords_unmatched">Passwords unmatched</string>
+    <string name="banner_ad_id">ca-app-pub-4670527831077521/3221816499</string>
+    <string name="interstital_periodic_ad_id">ca-app-pub-4670527831077521/7649002896</string>
+    <string name="interstital_periodic_playback_ad_id">ca-app-pub-4670527831077521/7649002896
+    </string>
+    <string name="interstital_limitless_id">ca-app-pub-4670527831077521/6606027697</string>
+    <string name="native_ad_id">ca-app-pub-4236292519721966/4318040938</string>
+    <string name="reward_ad_id">ca-app-pub-2467665062518077/4320793948</string>
+
+    <string name="search">Search</string>
+    <string name="search_dot">Search...</string>
+    <string name="local_storage_include">Play audios at device</string>
+    <string name="unityAdGameId">1300447</string>
+    <string name="offline_mode">Offline Mode</string>
+    <string name="add_spotify_msg">Only premium user can play musics!</string>
+    <string name="add_box_msg">Only paid users can play musics!</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="equalizer">Equalizer</string>
+    <string name="audio_status">OFFLINE</string>
+    <string name="remove_from_playlist">Remove from playlist</string>
+    <string name="download_opt">Download</string>
+    <string name="download_start_msg">Download started</string>
+    <string name="download_finish_msg">Download finished...</string>
+    <string name="show_suitable_songs_msg">Show suitable songs only</string>
+    <string name="spotify_download_error">You cannot download from Spotify!</string>
+    <string name="download_failed_msg">Download failed</string>
+    <string name="allow_mobile_data">Use mobile data to download</string>
+    <string name="max_length_error">Name is too long. Max allowed length:</string>
+    <string name="make_online_msg">Audio successfully is made online.</string>
+    <string name="initial_scan_message">Click for scanning...</string>
+    <string name="scan">Scan</string>
+    <string name="change_name">Change Name</string>
+    <string name="remove">Remove</string>
+    <string name="auth_account">Authenticate</string>
+    <string name="make_offline">Make Offline</string>
+    <string name="make_online">Make Online</string>
+</resources>

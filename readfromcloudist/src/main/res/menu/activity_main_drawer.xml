@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/audios"
+            android:icon="@drawable/ic_audio_dark"
+            android:title="Audios"/>
+        <item
+            android:id="@+id/albums"
+            android:icon="@drawable/album"
+            android:title="Albums"/>
+        <item
+            android:id="@+id/artists"
+            android:icon="@drawable/artist"
+            android:title="Artists"/>
+        <item
+            android:id="@+id/accounts"
+            android:icon="@drawable/cloud"
+            android:title="Accounts"/>
+        <item
+            android:id="@+id/playlists"
+            android:icon="@drawable/ic_playlist_dark"
+            android:title="Playlists"/>
+
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/settings"
+                android:title="Settings"/>
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/ic_help_dark"
+                android:title="Help"/>
+        </menu>
+    </item>
+
+</menu>

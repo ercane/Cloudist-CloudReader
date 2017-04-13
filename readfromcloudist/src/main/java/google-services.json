@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "937174397613",
+    "firebase_url": "https://play-from-cloudist.firebaseio.com",
+    "project_id": "play-from-cloudist",
+    "storage_bucket": "play-from-cloudist.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937174397613:android:67014e8996c27e69",
+        "android_client_info": {
+          "package_name": "mree.play.from.cloudist.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937174397613-l734uc363s9bvk2r64j1o3m2967tf7k8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "937174397613-76e6ugjhc44v293bgmh1b97v25728bhk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPObeVADRAjUNrk0Mb6fa4z2ks_p4qRvw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

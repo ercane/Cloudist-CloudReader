@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="ozelPrimary">#ff7e33</color>
+    <color name="ozelPrimaryDark">#f86211</color>
+    <color name="ozelAccent">#f1d8ca</color>
+    <color name="ozelText">#ffffff</color>
+    <color name="ozelTitle">#151414</color>
+    <color name="ozelAlbum">#6e6969</color>
+    <color name="ozelArtist">#494848</color>
+    <color name="ozelTitleWhite">#ffffff</color>
+    <color name="ozelAlbumWhite">#fcfbfb</color>
+    <color name="ozelArtistWhite">#e4e3e3</color>
+    <color name="ozelStatus">#31f90a</color>
+    <color name="background_material_light">#fafafa</color>
+</resources>

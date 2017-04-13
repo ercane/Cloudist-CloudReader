@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Cloudist-CloudReader.iml" filepath="$PROJECT_DIR$/Cloudist-CloudReader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/readfromcloudist/readfromcloudist.iml" filepath="$PROJECT_DIR$/readfromcloudist/readfromcloudist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rest-client/rest-client.iml" filepath="$PROJECT_DIR$/rest-client/rest-client.iml" />
+    </modules>
+  </component>
+</project>
